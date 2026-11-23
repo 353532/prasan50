@@ -430,16 +430,58 @@
       th, td { border: 1px solid #000; color: #000; background: none !important; padding: 6px 8px; }
       .print-signatures { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 36px; text-align: center; }
     }
+      .brand-logos-wrap {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .logo-pair {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(252, 211, 77, 0.35);
+      padding: 8px 14px;
+      border-radius: 16px;
+      backdrop-filter: blur(4px);
+    }
+
+    .logo-school-img {
+      height: 68px;
+      width: 68px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
+    }
+
+    .logo-50th-img {
+      height: 72px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+    }
+
+    @media (max-width: 600px) {
+      .logo-school-img { height: 54px; width: 54px; }
+      .logo-50th-img { height: 56px; }
+    }
   </style>
 </head>
 <body>
 
   <header class="jubilee-header">
     <div class="container header-flex">
-      <div>
-        <div class="jubilee-badge">✨ วาระครบรอบ 50 ปี โรงเรียนประสานวิทยามูลนิธิ • อ.ยะรัง จ.ปัตตานี</div>
-        <h1 class="main-heading">ระบบรายงานตารางสัมภาษณ์ศิษย์เก่า 50 ปี ประสาน</h1>
-        <div class="jawi-title">شكور سمفنا 50 تاهون</div>
+      <div class="brand-logos-wrap">
+        <div class="logo-pair">
+          <img src="logo-school.png" alt="ตราโรงเรียนประสานวิทยามูลนิธิ" class="logo-school-img">
+          <img src="logo-50th.png" alt="โลโก้ครบรอบ 50 ปี ประสานวิทยามูลนิธิ" class="logo-50th-img">
+        </div>
+        <div>
+          <div class="jubilee-badge">✨ วาระครบรอบ 50 ปี โรงเรียนประสานวิทยามูลนิธิ • อ.ยะรัง จ.ปัตตานี</div>
+          <h1 class="main-heading">ระบบรายงานตารางสัมภาษณ์ศิษย์เก่า 50 ปี ประสาน</h1>
+          <div class="jawi-title">شكور سمفنا 50 تاهون</div>
+        </div>
       </div>
       <div class="top-actions">
         <button type="button" class="btn" onclick="refreshData(true)">🔄 ซิงก์ข้อมูลล่าสุด</button>
@@ -448,6 +490,7 @@
       </div>
     </div>
   </header>
+
 
   <main class="container">
     <!-- กล่องช่วยตั้งค่าลิงก์ Web App URL ครั้งแรก -->
