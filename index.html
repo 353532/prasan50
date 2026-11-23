@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ตารางสัมภาษณ์ศิษย์เก่า 50 ปี ประสานวิทยามูลนิธิ | شكور سمفنا 50 تاهون</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@500;700&family=Prompt:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf7f0;
+      --surface: #ffffff;
+      --emerald-950: #04392a;
+      --emerald-900: #064e3b;
+      --emerald-800: #065f46;
+      --emerald-700: #047857;
+      --emerald-50: #ecfdf5;
+      --gold-700: #92400e;
+      --gold-600: #b45309;
+      --gold-500: #d97706;
+      --gold-300: #fcd34d;
+      --gold-100: #fef3c7;
+      --gold-50: #fffbeb;
+      --ink: #1e293b;
+      --muted: #64748b;
+      --border: #e5e0d5;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Sarabun', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Prompt', sans-serif;
+      margin-top: 0;
+    }
+
+    .jawi-title {
+      font-family: 'Noto Naskh Arabic', 'Amiri', serif;
+      direction: rtl;
+      color: var(--gold-300);
+      font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.6;
+      letter-spacing: 0.5px;
+    }
+
+    /* 50th Golden Jubilee Header */
+    .jubilee-header {
+      background-color: var(--emerald-950);
+      background-image:
+        radial-gradient(circle at 85% 20%, rgba(217, 119, 6, 0.28) 0%, transparent 48%),
+        radial-gradient(circle at 12% 80%, rgba(4, 120, 87, 0.45) 0%, transparent 50%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23fcd34d' stroke-opacity='0.08' stroke-width='1'%3E%3Cpath d='M30 0L37.5 15L52.5 7.5L45 22.5L60 30L45 37.5L52.5 52.5L37.5 45L30 60L22.5 45L7.5 52.5L15 37.5L0 30L15 22.5L7.5 7.5L22.5 15Z'/%3E%3Ccircle cx='30' cy='30' r='9'/%3E%3C/g%3E%3C/svg%3E");
+      color: #ffffff;
+      border-bottom: 5px solid var(--gold-500);
+      padding: 26px 16px;
+    }
+
+    .container {
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 0 14px;
+    }
+
+    .header-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .jubilee-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(90deg, rgba(217, 119, 6, 0.3), rgba(252, 211, 77, 0.18));
+      border: 1px solid rgba(252, 211, 77, 0.55);
+      color: var(--gold-300);
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-family: 'Prompt', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .main-heading {
+      font-size: clamp(1.3rem, 2.4vw, 1.85rem);
+      margin: 0 0 4px 0;
+      color: #ffffff;
+    }
+
+    .top-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .btn {
+      font-family: 'Prompt', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 10px 16px;
+      border-radius: 10px;
+      border: 1.5px solid var(--border);
+      background: var(--surface);
+      color: var(--ink);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+
+    .btn:hover { filter: brightness(0.97); }
+    .btn-primary { background: var(--emerald-700); color: #ffffff; border-color: var(--emerald-700); }
+    .btn-gold { background: var(--gold-500); color: #ffffff; border-color: var(--gold-500); }
+    .btn-sm { padding: 5px 10px; font-size: 0.8rem; border-radius: 8px; }
+
+    .setup-alert {
+      background: var(--gold-50);
+      border: 2px solid var(--gold-500);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      margin: 18px 0;
+      display: none;
+    }
+
+    /* KPI Grid */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+      gap: 12px;
+      margin: 20px 0 18px;
+    }
+
+    .kpi-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(6, 78, 59, 0.05);
+    }
+
+    .kpi-val {
+      font-family: 'Prompt', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--emerald-900);
+      line-height: 1.2;
+    }
+
+    .kpi-label {
+      font-size: 0.88rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    /* Progress & Upcoming Schedule Grid */
+    .mid-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .panel-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: 0 2px 8px rgba(6, 78, 59, 0.05);
+    }
+
+    .prog-row { margin-bottom: 12px; }
+    .prog-row:last-child { margin-bottom: 0; }
+    .prog-top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .prog-bg {
+      height: 9px;
+      background: #ece8de;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .prog-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--emerald-700), var(--gold-500));
+      border-radius: 999px;
+      transition: width 0.35s ease;
+    }
+
+    .schedule-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 220px;
+      overflow-y: auto;
+    }
+
+    .schedule-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: var(--gold-50);
+      border: 1px solid #fde68a;
+      font-size: 0.9rem;
+    }
+
+    /* Sheet Tabs */
+    .sheet-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .sheet-tab {
+      font-family: 'Prompt', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: var(--surface);
+      color: var(--ink);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .sheet-tab.active {
+      background: var(--emerald-900);
+      color: var(--gold-300);
+      border-color: var(--emerald-900);
+    }
+
+    /* Filter Bar */
+    .filter-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .inp, .sel {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font: inherit;
+      background: var(--surface);
+    }
+
+    /* Main Table */
+    .table-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow-x: auto;
+      box-shadow: 0 3px 10px rgba(6, 78, 59, 0.05);
+      margin-bottom: 40px;
+    }
+
+    table { width: 100%; border-collapse: collapse; min-width: 1020px; }
+
+    th {
+      background: var(--emerald-900);
+      color: #ffffff;
+      font-family: 'Prompt', sans-serif;
+      font-size: 0.86rem;
+      font-weight: 600;
+      text-align: left;
+      padding: 12px;
+    }
+
+    td {
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+      font-size: 0.94rem;
+    }
+
+    tr:hover td { background: #fcfbf7; }
+
+    .person-cell {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+      border: 2px solid var(--gold-500);
+      cursor: pointer;
+      flex-shrink: 0;
+      background: var(--emerald-50);
+    }
+
+    .avatar-placeholder {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #f1f5f9;
+      border: 1.5px dashed #cbd5e1;
+      color: #64748b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .st-done { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+    .st-sched { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
+    .st-wait { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+    .st-missing { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+
+    /* Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.68);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      z-index: 100;
+    }
+
+    .modal-backdrop.open { display: flex; }
+
+    .modal-box {
+      background: var(--surface);
+      border-radius: 18px;
+      max-width: 620px;
+      width: 100%;
+      max-height: 92vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.28);
+    }
+
+    .modal-head {
+      background: var(--emerald-900);
+      color: #ffffff;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      border-bottom: 3px solid var(--gold-500);
+    }
+
+    .modal-body { padding: 20px; }
+    .form-row { margin-bottom: 12px; }
+    .form-row label { display: block; font-weight: 700; margin-bottom: 4px; font-size: 0.9rem; }
+
+    .photo-box {
+      background: #faf8f4;
+      border: 1.5px dashed var(--gold-500);
+      border-radius: 12px;
+      padding: 14px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .photo-preview {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+      border: 3px solid var(--gold-500);
+      display: block;
+      margin: 6px auto 10px;
+      background: #e2e8f0;
+    }
+
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 62vh;
+      border-radius: 12px;
+      border: 3px solid var(--gold-500);
+      display: block;
+      margin: 0 auto 14px;
+    }
+
+    .print-signatures { display: none; }
+
+    @media print {
+      body { background: #ffffff; color: #000000; font-size: 10.5pt; }
+      .top-actions, .mid-grid, .sheet-tabs, .filter-bar, .no-print, .modal-backdrop, .setup-alert { display: none !important; }
+      .jubilee-header { background: none; color: #000; border-bottom: 2px solid #000; padding: 8px 0 12px; }
+      .main-heading, .jawi-title, .jubilee-badge { color: #000; border-color: #000; }
+      .table-wrap { border: none; box-shadow: none; overflow: visible; }
+      table { min-width: 100%; border: 1px solid #000; }
+      th, td { border: 1px solid #000; color: #000; background: none !important; padding: 6px 8px; }
+      .print-signatures { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 36px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="jubilee-header">
+    <div class="container header-flex">
+      <div>
+        <div class="jubilee-badge">✨ วาระครบรอบ 50 ปี โรงเรียนประสานวิทยามูลนิธิ • อ.ยะรัง จ.ปัตตานี</div>
+        <h1 class="main-heading">ระบบรายงานตารางสัมภาษณ์ศิษย์เก่า 50 ปี ประสาน</h1>
+        <div class="jawi-title">شكور سمفنا 50 تاهون</div>
+      </div>
+      <div class="top-actions">
+        <button type="button" class="btn" onclick="refreshData(true)">🔄 ซิงก์ข้อมูลล่าสุด</button>
+        <button type="button" class="btn btn-gold" id="btnCoordMode" onclick="toggleCoordMode()">🔐 โหมดผู้ประสานงาน</button>
+        <button type="button" class="btn btn-primary" onclick="window.print()">🖨️ พิมพ์ตาราง A4</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- กล่องช่วยตั้งค่าลิงก์ Web App URL ครั้งแรก -->
+    <div class="setup-alert" id="setupAlertBox">
+      <strong style="color:var(--gold-700);">⚙️ ยังไม่ได้ใส่ลิงก์ Google Apps Script Web App URL ในไฟล์ index.html</strong>
+      <p style="margin:6px 0 10px; font-size:0.92rem;">นำลิงก์ที่ลงท้ายด้วย <strong>/exec</strong> มาวางในตัวแปร <strong>GAS_API_URL</strong> ในโค้ด หรือวางทดสอบด้านล่างได้ทันทีครับ:</p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <input type="url" id="inpTempUrl" class="inp" style="flex:1 1 280px;" placeholder="https://script.google.com/macros/s/.../exec">
+        <button type="button" class="btn btn-primary" onclick="saveTempApiUrl()">เชื่อมต่อฐานข้อมูล</button>
+      </div>
+    </div>
+
+    <!-- สถิติภาพรวม 5 การ์ด -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-val" id="kpiTotal">0</div>
+        <div class="kpi-label">รายการเป้าหมายทั้งหมด</div>
+      </div>
+      <div class="kpi-card" style="border-bottom:3px solid #16a34a;">
+        <div class="kpi-val" id="kpiDone" style="color:#15803d;">0</div>
+        <div class="kpi-label">✅ สัมภาษณ์เรียบร้อย</div>
+      </div>
+      <div class="kpi-card" style="border-bottom:3px solid #2563eb;">
+        <div class="kpi-val" id="kpiSched" style="color:#1d4ed8;">0</div>
+        <div class="kpi-label">📅 นัดหมายวัน–เวลาแล้ว</div>
+      </div>
+      <div class="kpi-card" style="border-bottom:3px solid #64748b;">
+        <div class="kpi-val" id="kpiWait">0</div>
+        <div class="kpi-label">⏳ รอสัมภาษณ์ (มีรายชื่อแล้ว)</div>
+      </div>
+      <div class="kpi-card" style="border-bottom:3px solid var(--gold-500);">
+        <div class="kpi-val" id="kpiMissing" style="color:var(--gold-600);">0</div>
+        <div class="kpi-label">🔍 รอระบุรายชื่อตัวแทนรุ่น</div>
+      </div>
+    </section>
+
+    <!-- ความคืบหน้าแยก 4 แผ่นงาน + กระดานคิวนัดหมายสัมภาษณ์ -->
+    <section class="mid-grid">
+      <div class="panel-card">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+          <h3 style="font-size:1.02rem; color:var(--emerald-900); margin:0;">📊 ความคืบหน้าแยกตามหมวดศิษย์เก่า (4 แผ่นงาน)</h3>
+          <small id="syncStatusText" style="color:var(--muted); font-weight:600;">กำลังโหลด...</small>
+        </div>
+        <div id="sheetProgressBox"></div>
+      </div>
+
+      <div class="panel-card">
+        <h3 style="font-size:1.02rem; color:var(--emerald-900); margin-bottom:12px;">🎬 กระดานคิวนัดหมายสัมภาษณ์ (สำหรับทีมถ่ายทำ/พิธีกร)</h3>
+        <div class="schedule-list" id="upcomingListBox">
+          <div style="color:var(--muted); font-size:0.9rem;">ยังไม่มีรายการที่ระบุวัน–เวลานัดหมาย</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- แท็บเลือกแผ่นงานทั้ง 4 หมวด -->
+    <nav class="sheet-tabs" id="sheetTabsBar">
+      <button type="button" class="sheet-tab active" onclick="selectSheetTab('ALL')">รวมทั้งหมด (4 หมวด)</button>
+      <button type="button" class="sheet-tab" onclick="selectSheetTab('ซานาวีย์')">ชั้น 10 (ซานาวีย์)</button>
+      <button type="button" class="sheet-tab" onclick="selectSheetTab('ม.6')">ม.6</button>
+      <button type="button" class="sheet-tab" onclick="selectSheetTab('ม.3')">ม.3</button>
+      <button type="button" class="sheet-tab" onclick="selectSheetTab('ศิษย์เก่าที่มีบทบาทในสังคม')">ศิษย์เก่าที่มีบทบาทในสังคม</button>
+    </nav>
+
+    <!-- แถบค้นหาและตัวกรอง -->
+    <section class="filter-bar">
+      <input type="text" id="inpSearch" class="inp" placeholder="🔍 ค้นหาชื่อศิษย์เก่า / รุ่นที่ / ปี พ.ศ. / ตำแหน่ง / ผู้ประสานงาน..." oninput="renderTable()">
+      <select id="selStatus" class="sel" onchange="renderTable()">
+        <option value="ALL">ทุกสถานะการสัมภาษณ์</option>
+        <option value="สัมภาษณ์เรียบร้อย">✅ สัมภาษณ์เรียบร้อย</option>
+        <option value="นัดหมายแล้ว">📅 นัดหมายวัน–เวลาแล้ว</option>
+        <option value="รอสัมภาษณ์">⏳ รอสัมภาษณ์ (มีชื่อแล้ว)</option>
+        <option value="รอระบุรายชื่อ">🔍 รอระบุรายชื่อตัวแทนรุ่น</option>
+      </select>
+      <select id="selCoordinator" class="sel" onchange="renderTable()">
+        <option value="ALL">ผู้ประสานงานทั้งหมด</option>
+      </select>
+    </section>
+
+    <!-- ตารางแสดงข้อมูล -->
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:120px;">หมวด / รุ่นที่</th>
+            <th>ชื่อ–สกุลศิษย์เก่า</th>
+            <th>เบอร์โทรศัพท์</th>
+            <th>วัน–เวลานัดสัมภาษณ์</th>
+            <th>ผู้ประสานงาน</th>
+            <th>สถานะ / สื่อฟุตเทจ</th>
+            <th class="no-print">จัดการ</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr><td colspan="7" style="text-align:center; padding:30px;">กำลังดึงข้อมูลตารางสัมภาษณ์ศิษย์เก่า...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ช่องลงนามสำหรับพิมพ์เอกสาร A4 -->
+    <div class="print-signatures">
+      <div>
+        <p>ลงชื่อ ....................................................... ผู้สรุปรายงาน</p>
+        <p>(.......................................................)</p>
+        <p>ฝ่ายประสานงานศิษย์เก่า งานครบรอบ 50 ปี</p>
+      </div>
+      <div>
+        <p>ลงชื่อ ....................................................... ผู้รับรองข้อมูล</p>
+        <p>(.......................................................)</p>
+        <p>ประธานคณะกรรมการจัดงานครบรอบ 50 ปี ประสานวิทยามูลนิธิ</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal ดูภาพขยายและดาวน์โหลดรูปศิษย์เก่า -->
+  <div class="modal-backdrop" id="photoModal" onclick="if(event.target===this)closeModal('photoModal')">
+    <div class="modal-box" style="max-width:460px; text-align:center;">
+      <div class="modal-head">
+        <h3 style="margin:0; font-size:1.05rem;">🖼️ รูปโปรไฟล์ศิษย์เก่า</h3>
+        <button type="button" class="btn btn-sm" onclick="closeModal('photoModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <img id="viewerImg" class="lightbox-img" alt="รูปศิษย์เก่า">
+        <div id="viewerCaption" style="font-weight:700; color:var(--emerald-900); margin-bottom:14px;"></div>
+        <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+          <button type="button" class="btn btn-primary" id="btnDownloadImg" onclick="downloadViewerPhoto()">⬇️ ดาวน์โหลดรูปลงเครื่อง</button>
+          <a id="btnOpenOrig" href="#" target="_blank" rel="noopener" class="btn">🔗 เปิดไฟล์ต้นฉบับ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal รหัส PIN ผู้ประสานงาน -->
+  <div class="modal-backdrop" id="pinModal" onclick="if(event.target===this)closeModal('pinModal')">
+    <div class="modal-box" style="max-width:400px;">
+      <div class="modal-head">
+        <h3 style="margin:0; font-size:1.05rem;">🔐 โหมดทีมงานผู้ประสานงาน 50 ปี</h3>
+        <button type="button" class="btn btn-sm" onclick="closeModal('pinModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-row">
+          <label for="inpPin">กรอกรหัส PIN สำหรับผู้ประสานงาน</label>
+          <input type="password" id="inpPin" class="inp" placeholder="รหัส PIN" onkeydown="if(event.key==='Enter')submitPin()">
+        </div>
+        <div id="pinError" style="color:#b91c1c; font-weight:600; margin-bottom:10px; display:none;">รหัส PIN ไม่ถูกต้อง กรุณาลองอีกครั้ง</div>
+        <button type="button" class="btn btn-primary" id="btnPinSubmit" style="width:100%; justify-content:center;" onclick="submitPin()">เข้าสู่โหมดจัดการข้อมูล</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal แก้ไขข้อมูลตารางสัมภาษณ์ + อัปโหลดรูปศิษย์เก่า -->
+  <div class="modal-backdrop" id="editModal" onclick="if(event.target===this)closeModal('editModal')">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3 style="margin:0; font-size:1.02rem;" id="editModalTitle">📝 อัปเดตข้อมูลสัมภาษณ์ศิษย์เก่า</h3>
+        <button type="button" class="btn btn-sm" onclick="closeModal('editModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="photo-box">
+          <strong style="font-size:0.9rem; color:var(--emerald-900);">📸 รูปถ่ายศิษย์เก่า (สำหรับประชาสัมพันธ์/ทำวีดิทัศน์ 50 ปี)</strong>
+          <img id="prevPhoto" class="photo-preview" alt="ตัวอย่างรูป">
+          <input type="file" id="filePhoto" accept="image/*" style="display:none;" onchange="onPhotoPicked(this)">
+          <div style="display:flex; justify-content:center; gap:8px;">
+            <button type="button" class="btn btn-sm btn-primary" onclick="document.getElementById('filePhoto').click()">เลือกรูป / ถ่ายรูป</button>
+            <button type="button" class="btn btn-sm" onclick="clearPickedPhoto()">ลบรูป</button>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+          <div class="form-row">
+            <label>ชื่อ (คอลัมน์ D)</label>
+            <input type="text" id="edFirstName" class="inp" placeholder="ระบุชื่อศิษย์เก่า">
+          </div>
+          <div class="form-row">
+            <label>นามสกุล (คอลัมน์ E)</label>
+            <input type="text" id="edLastName" class="inp" placeholder="ระบุนามสกุล">
+          </div>
+        </div>
+
+        <div class="form-row" id="roleRowWrap" style="display:none;">
+          <label>ตำแหน่ง / บทบาทในสังคม</label>
+          <input type="text" id="edRoleTitle" class="inp" placeholder="เช่น ผู้อำนวยการ, โต๊ะครู, ผู้บริหารองค์กร...">
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+          <div class="form-row">
+            <label>ปี พ.ศ. ที่จบ (ถ้าทราบ)</label>
+            <input type="text" id="edYear" class="inp" placeholder="เช่น 2538">
+          </div>
+          <div class="form-row">
+            <label>เบอร์โทรศัพท์ติดต่อ</label>
+            <input type="text" id="edPhone" class="inp" placeholder="08X-XXXXXXX">
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+          <div class="form-row">
+            <label>วัน–เวลานัดสัมภาษณ์</label>
+            <input type="text" id="edInterviewTime" class="inp" placeholder="เช่น 15 ธ.ค. 69 เวลา 10.00 น.">
+          </div>
+          <div class="form-row">
+            <label>ชื่อผู้ประสานงาน</label>
+            <input type="text" id="edCoordinator" class="inp" placeholder="ระบุชื่อครู/ทีมงานผู้ประสาน">
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+          <div class="form-row">
+            <label>สถานะการสัมภาษณ์</label>
+            <select id="edStatus" class="sel">
+              <option value="รอสัมภาษณ์">⏳ รอสัมภาษณ์</option>
+              <option value="นัดหมายแล้ว">📅 นัดหมายวัน–เวลาแล้ว</option>
+              <option value="สัมภาษณ์เรียบร้อย">✅ สัมภาษณ์เรียบร้อย</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>ลิงก์ไฟล์วิดีโอ / โฟลเดอร์ฟุตเทจ (ถ้ามี)</label>
+            <input type="url" id="edVideoUrl" class="inp" placeholder="https://drive.google.com/...">
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-top:16px; padding-top:12px; border-top:1px solid var(--border);">
+          <button type="button" class="btn btn-sm" onclick="addAnotherPersonInBatch()">➕ เพิ่มรายชื่อตัวแทนในรุ่นนี้อีก 1 คน</button>
+          <div style="display:flex; gap:8px;">
+            <button type="button" class="btn" onclick="closeModal('editModal')">ยกเลิก</button>
+            <button type="button" class="btn btn-primary" id="btnSaveAlumni" onclick="saveCurrentEdit()">💾 บันทึกลง Google Sheets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ========================================================================
+    // ★ นำลิงก์ Web App URL (ที่ลงท้ายด้วย /exec) จาก Google Apps Script มาวางที่นี่
+    // ========================================================================
+    const GAS_API_URL = 'https://script.google.com/macros/s/AKfycbwwOPROI4nvNHYHpC5jkFfXoB_--yW2uQgp39Ac4q47folW1wkhBDjypBfOSMgBz6Wxpw/exec';
+
+    const CACHE_STORAGE_KEY = 'PRASAN_50Y_CACHE_V1';
+    const TEMP_API_KEY = 'PRASAN_50Y_API_URL';
+    const DEFAULT_AVATAR = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%23ecfdf5'/%3E%3Ccircle cx='40' cy='30' r='14' fill='%23047857'/%3E%3Cpath d='M16 70c0-13 11-22 24-22s24 9 24 22' fill='%23047857'/%3E%3C/svg%3E";
+
+    let state = {
+      pin: '',
+      isCoordinator: false,
+      activeSheet: 'ALL',
+      items: [],
+      editingItem: null,
+      pendingPhotoBase64: '',
+      removePhoto: false,
+      viewerUrl: '',
+      viewerFileName: 'alumni.jpg'
+    };
+
+    function getApiUrl() {
+      if (GAS_API_URL && GAS_API_URL.indexOf('https://script.google.com/') === 0) {
+        return GAS_API_URL.trim();
+      }
+      return (localStorage.getItem(TEMP_API_KEY) || '').trim();
+    }
+
+    function saveTempApiUrl() {
+      const url = document.getElementById('inpTempUrl').value.trim();
+      if (url.indexOf('https://script.google.com/') !== 0) {
+        alert('กรุณาวางลิงก์ Web App URL ที่ขึ้นต้นด้วย https://script.google.com/ และลงท้ายด้วย /exec ครับ');
+        return;
+      }
+      localStorage.setItem(TEMP_API_KEY, url);
+      document.getElementById('setupAlertBox').style.display = 'none';
+      refreshData(true);
+    }
+
+    async function postApi(payloadObj) {
+      const apiUrl = getApiUrl();
+      if (!apiUrl) throw new Error('ยังไม่ได้ตั้งค่าลิงก์ GAS_API_URL');
+      const res = await fetch(apiUrl, {
+        method: 'POST',
+        redirect: 'follow',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payloadObj)
+      });
+      const json = await res.json();
+      if (!json.ok) throw new Error(json.error || 'เกิดข้อผิดพลาดจากเซิร์ฟเวอร์');
+      return json;
+    }
+
+    async function refreshData(forceNetwork) {
+      const apiUrl = getApiUrl();
+      if (!apiUrl) {
+        document.getElementById('setupAlertBox').style.display = 'block';
+        document.getElementById('syncStatusText').textContent = 'รอตั้งค่าลิงก์';
+        return;
+      }
+      document.getElementById('setupAlertBox').style.display = 'none';
+
+      if (!forceNetwork && !state.pin) {
+        try {
+          const cached = localStorage.getItem(CACHE_STORAGE_KEY);
+          if (cached) applyData(JSON.parse(cached));
+        } catch (e) {}
+      }
+
+      document.getElementById('syncStatusText').textContent = 'กำลังซิงก์...';
+
+      try {
+        if (state.pin) {
+          const json = await postApi({ action: 'listCoordinator', pin: state.pin });
+          applyData(json.data);
+        } else {
+          const res = await fetch(apiUrl + '?action=list&t=' + Date.now(), { redirect: 'follow' });
+          const json = await res.json();
+          if (!json.ok) throw new Error(json.error || 'โหลดข้อมูลไม่สำเร็จ');
+          try {
+            localStorage.setItem(CACHE_STORAGE_KEY, JSON.stringify(json.data));
+          } catch (e) {}
+          applyData(json.data);
+        }
+        document.getElementById('syncStatusText').textContent = 'ข้อมูลล่าสุดแล้ว';
+      } catch (err) {
+        document.getElementById('syncStatusText').textContent = 'ซิงก์ไม่สำเร็จ';
+        alert('โหลดข้อมูลไม่สำเร็จ: ' + err.message);
+      }
+    }
+
+    function esc(str) {
+      const d = document.createElement('div');
+      d.textContent = str == null ? '' : String(str);
+      return d.innerHTML;
+    }
+
+    function applyData(data) {
+      if (!data) return;
+      state.isCoordinator = !!data.isCoordinator;
+      state.items = data.items || [];
+
+      document.getElementById('btnCoordMode').textContent = state.isCoordinator
+        ? '🔓 โหมดผู้ประสานงานเปิดอยู่ (ล็อก)'
+        : '🔐 โหมดผู้ประสานงาน';
+
+      populateCoordinatorFilter();
+      renderDashboard();
+      renderTable();
+    }
+
+    function populateCoordinatorFilter() {
+      const sel = document.getElementById('selCoordinator');
+      const cur = sel.value;
+      const coords = [...new Set(state.items.map(i => i.coordinator).filter(Boolean))];
+      sel.innerHTML = '<option value="ALL">ผู้ประสานงานทั้งหมด</option>';
+      coords.forEach(c => {
+        const o = document.createElement('option');
+        o.value = c; o.textContent = c;
+        sel.appendChild(o);
+      });
+      if (coords.includes(cur)) sel.value = cur;
+    }
+
+    function renderDashboard() {
+      const items = state.items;
+      const done = items.filter(i => i.status === 'สัมภาษณ์เรียบร้อย').length;
+      const sched = items.filter(i => i.status === 'นัดหมายแล้ว').length;
+      const wait = items.filter(i => i.status === 'รอสัมภาษณ์' && i.hasName).length;
+      const missing = items.filter(i => !i.hasName || i.status === 'รอระบุรายชื่อ').length;
+
+      document.getElementById('kpiTotal').textContent = items.length;
+      document.getElementById('kpiDone').textContent = done;
+      document.getElementById('kpiSched').textContent = sched;
+      document.getElementById('kpiWait').textContent = wait;
+      document.getElementById('kpiMissing').textContent = missing;
+
+      // หลอดความคืบหน้าแยก 4 หมวด
+      const progBox = document.getElementById('sheetProgressBox');
+      const groups = ['ซานาวีย์', 'ม.6', 'ม.3', 'ศิษย์เก่าที่มีบทบาทในสังคม'];
+      progBox.innerHTML = groups.map(g => {
+        const sub = items.filter(i => i.sheetKey === g);
+        const subDone = sub.filter(i => i.status === 'สัมภาษณ์เรียบร้อย').length;
+        const subNamed = sub.filter(i => i.hasName).length;
+        const pct = sub.length ? Math.round((subDone / sub.length) * 100) : 0;
+        return `
+          <div class="prog-row">
+            <div class="prog-top">
+              <span>${esc(g)} (มีรายชื่อ ${subNamed}/${sub.length})</span>
+              <span>สัมภาษณ์แล้ว ${subDone}/${sub.length} (${pct}%)</span>
+            </div>
+            <div class="prog-bg"><div class="prog-fill" style="width:${pct}%"></div></div>
+          </div>`;
+      }).join('');
+
+      // กระดานคิวนัดหมายสัมภาษณ์
+      const upcoming = items.filter(i => i.interviewTime && i.status !== 'สัมภาษณ์เรียบร้อย');
+      const upBox = document.getElementById('upcomingListBox');
+      if (!upcoming.length) {
+        upBox.innerHTML = '<div style="color:var(--muted); font-size:0.9rem;">ยังไม่มีคิวนัดหมายที่รอถ่ายทำ (เมื่อผู้ประสานงานกรอกวัน–เวลาสัมภาษณ์ รายชื่อจะแสดงที่นี่ทันที)</div>';
+      } else {
+        upBox.innerHTML = upcoming.map(i => `
+          <div class="schedule-item">
+            <div>
+              <strong>${esc(i.fullName || 'รอระบุชื่อ')}</strong>
+              <span style="color:var(--muted);">(${esc(i.sheetKey)} ${i.batch ? 'รุ่น ' + esc(i.batch) : ''})</span>
+              <div style="font-size:0.82rem; color:var(--emerald-800);">ผู้ประสานงาน: ${esc(i.coordinator || '-')}</div>
+            </div>
+            <span class="badge st-sched">📅 ${esc(i.interviewTime)}</span>
+          </div>`).join('');
+      }
+    }
+
+    function selectSheetTab(sheetKey) {
+      state.activeSheet = sheetKey;
+      const labels = ['ALL', 'ซานาวีย์', 'ม.6', 'ม.3', 'ศิษย์เก่าที่มีบทบาทในสังคม'];
+      document.querySelectorAll('.sheet-tab').forEach((btn, idx) => {
+        btn.classList.toggle('active', labels[idx] === sheetKey);
+      });
+      renderTable();
+    }
+
+    function renderStatusBadge(status) {
+      if (status === 'สัมภาษณ์เรียบร้อย') return '<span class="badge st-done">✅ สัมภาษณ์เรียบร้อย</span>';
+      if (status === 'นัดหมายแล้ว') return '<span class="badge st-sched">📅 นัดหมายแล้ว</span>';
+      if (status === 'รอระบุรายชื่อ') return '<span class="badge st-missing">🔍 รอระบุรายชื่อตัวแทนรุ่น</span>';
+      return '<span class="badge st-wait">⏳ รอสัมภาษณ์</span>';
+    }
+
+    function renderTable() {
+      const q = document.getElementById('inpSearch').value.trim().toLowerCase();
+      const stFilter = document.getElementById('selStatus').value;
+      const coordFilter = document.getElementById('selCoordinator').value;
+
+      const filtered = state.items.filter(item => {
+        if (state.activeSheet !== 'ALL' && item.sheetKey !== state.activeSheet) return false;
+        if (stFilter !== 'ALL' && item.status !== stFilter) return false;
+        if (coordFilter !== 'ALL' && item.coordinator !== coordFilter) return false;
+        if (q) {
+          const hay = [item.sheetKey, item.batch, item.year, item.fullName, item.roleTitle, item.coordinator, item.interviewTime].join(' ').toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      const tbody = document.getElementById('tableBody');
+      if (!filtered.length) {
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding:26px; color:var(--muted);">ไม่พบข้อมูลที่ตรงกับเงื่อนไขการค้นหา</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = filtered.map(item => {
+        const thumbUrl = item.photoUrl ? item.photoUrl.replace('&sz=w1000', '&sz=w160') : '';
+        const avatarHtml = thumbUrl
+          ? `<img src="${esc(thumbUrl)}" loading="lazy" decoding="async" class="avatar" alt="รูปศิษย์เก่า" title="คลิกเพื่อดูภาพขยายและดาวน์โหลด" onclick="openPhotoModal('${esc(item.id)}')">`
+          : `<div class="avatar-placeholder">🎓</div>`;
+
+        const nameHtml = item.hasName
+          ? `<div style="font-weight:700; color:var(--emerald-900);">${esc(item.fullName)}</div>`
+          : `<div style="color:var(--gold-600); font-weight:700;">⚠️ รอระบุรายชื่อตัวแทนรุ่น</div>`;
+
+        const roleHtml = item.roleTitle
+          ? `<div style="font-size:0.84rem; color:var(--gold-700); font-weight:600;">💼 ${esc(item.roleTitle)}</div>`
+          : '';
+
+        const dlPhotoBtn = item.photoUrl
+          ? `<button type="button" class="btn btn-sm" style="margin-top:4px; padding:2px 8px; font-size:0.75rem;" onclick="openPhotoModal('${esc(item.id)}')">🔍 ดูรูป / ⬇️ โหลดรูป</button>`
+          : '';
+
+        const phoneHtml = (state.isCoordinator && item.hasPhone)
+          ? `<a href="tel:${esc(item.phone)}" style="font-weight:700; color:var(--emerald-800); text-decoration:none;">📞 ${esc(item.phone)}</a>`
+          : `<span>${esc(item.phone || '-')}</span>`;
+
+        const videoBtn = item.videoUrl
+          ? `<div style="margin-top:4px;"><a href="${esc(item.videoUrl)}" target="_blank" rel="noopener" class="btn btn-sm">🎬 เปิดฟุตเทจวิดีโอ</a></div>`
+          : '';
+
+        const actionBtn = state.isCoordinator
+          ? `<button type="button" class="btn btn-sm btn-primary" onclick="openEditModal('${esc(item.id)}')">📝 อัปเดต / อัปโหลดรูป</button>`
+          : `<button type="button" class="btn btn-sm" onclick="toggleCoordMode()">🔐 แก้ไข</button>`;
+
+        return `
+          <tr>
+            <td>
+              <div style="font-weight:700; color:var(--emerald-900);">${esc(item.sheetKey)}</div>
+              <small style="color:var(--muted);">
+                ${item.batch ? 'รุ่นที่ ' + esc(item.batch) : 'ลำดับ ' + esc(item.seq)}
+                ${item.year ? ' • พ.ศ. ' + esc(item.year) : ''}
+              </small>
+            </td>
+            <td>
+              <div class="person-cell">
+                ${avatarHtml}
+                <div>
+                  ${nameHtml}
+                  ${roleHtml}
+                  ${dlPhotoBtn}
+                </div>
+              </div>
+            </td>
+            <td>${phoneHtml}</td>
+            <td>${item.interviewTime ? `<strong>📅 ${esc(item.interviewTime)}</strong>` : '<span style="color:var(--muted);">- ยังไม่ระบุ -</span>'}</td>
+            <td>${esc(item.coordinator || '-')}</td>
+            <td>
+              <div>${renderStatusBadge(item.status)}</div>
+              ${videoBtn}
+            </td>
+            <td class="no-print">${actionBtn}</td>
+          </tr>`;
+      }).join('');
+    }
+
+    function toggleCoordMode() {
+      if (state.isCoordinator) {
+        state.pin = '';
+        refreshData(true);
+      } else {
+        document.getElementById('inpPin').value = '';
+        document.getElementById('pinError').style.display = 'none';
+        openModal('pinModal');
+      }
+    }
+
+    async function submitPin() {
+      const pin = document.getElementById('inpPin').value.trim();
+      const btn = document.getElementById('btnPinSubmit');
+      btn.disabled = true;
+      btn.textContent = 'กำลังตรวจสอบ...';
+
+      try {
+        const json = await postApi({ action: 'verifyPin', pin: pin });
+        btn.disabled = false;
+        btn.textContent = 'เข้าสู่โหมดจัดการข้อมูล';
+        if (json.valid && json.data) {
+          state.pin = pin;
+          closeModal('pinModal');
+          applyData(json.data);
+        } else {
+          document.getElementById('pinError').style.display = 'block';
+        }
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = 'เข้าสู่โหมดจัดการข้อมูล';
+        alert('ตรวจสอบรหัสไม่สำเร็จ: ' + err.message);
+      }
+    }
+
+    function compressPhoto(file, cb) {
+      const objUrl = URL.createObjectURL(file);
+      const img = new Image();
+      img.onload = function() {
+        URL.revokeObjectURL(objUrl);
+        const maxD = 850;
+        let w = img.width, h = img.height;
+        if (w > maxD || h > maxD) {
+          if (w > h) { h = Math.round((h * maxD) / w); w = maxD; }
+          else { w = Math.round((w * maxD) / h); h = maxD; }
+        }
+        const cv = document.createElement('canvas');
+        cv.width = w; cv.height = h;
+        cv.getContext('2d').drawImage(img, 0, 0, w, h);
+        cb(cv.toDataURL('image/jpeg', 0.84));
+      };
+      img.src = objUrl;
+    }
+
+    function onPhotoPicked(inp) {
+      const file = inp.files && inp.files[0];
+      if (!file) return;
+      compressPhoto(file, base64 => {
+        state.pendingPhotoBase64 = base64;
+        state.removePhoto = false;
+        document.getElementById('prevPhoto').src = base64;
+      });
+    }
+
+    function clearPickedPhoto() {
+      state.pendingPhotoBase64 = '';
+      state.removePhoto = true;
+      document.getElementById('filePhoto').value = '';
+      document.getElementById('prevPhoto').src = DEFAULT_AVATAR;
+    }
+
+    function openEditModal(itemId) {
+      const item = state.items.find(i => i.id === itemId);
+      if (!item) return;
+      state.editingItem = item;
+      state.pendingPhotoBase64 = '';
+      state.removePhoto = false;
+      document.getElementById('filePhoto').value = '';
+
+      document.getElementById('editModalTitle').textContent = `📝 ${item.sheetKey} ${item.batch ? 'รุ่นที่ ' + item.batch : 'ลำดับ ' + item.seq}`;
+      document.getElementById('prevPhoto').src = item.photoUrl || DEFAULT_AVATAR;
+      document.getElementById('edFirstName').value = item.firstName;
+      document.getElementById('edLastName').value = item.lastName;
+      document.getElementById('roleRowWrap').style.display = item.hasRole ? 'block' : 'none';
+      document.getElementById('edRoleTitle').value = item.roleTitle || '';
+      document.getElementById('edYear').value = item.year || '';
+      document.getElementById('edYear').disabled = item.isSubRow;
+      document.getElementById('edPhone').value = item.phone === '-' ? '' : item.phone;
+      document.getElementById('edInterviewTime').value = item.interviewTime || '';
+      document.getElementById('edCoordinator').value = item.coordinator || '';
+      document.getElementById('edStatus').value = item.status === 'รอระบุรายชื่อ' ? 'รอสัมภาษณ์' : item.status;
+      document.getElementById('edVideoUrl').value = item.videoUrl || '';
+
+      openModal('editModal');
+    }
+
+    async function saveCurrentEdit() {
+      if (!state.editingItem) return;
+      const btn = document.getElementById('btnSaveAlumni');
+      btn.disabled = true;
+      btn.textContent = '⏳ กำลังบันทึก...';
+
+      const payload = {
+        sheetKey: state.editingItem.sheetKey,
+        rowNumber: state.editingItem.rowNumber,
+        isSubRow: state.editingItem.isSubRow,
+        firstName: document.getElementById('edFirstName').value,
+        lastName: document.getElementById('edLastName').value,
+        roleTitle: document.getElementById('edRoleTitle').value,
+        year: document.getElementById('edYear').value,
+        phone: document.getElementById('edPhone').value,
+        interviewTime: document.getElementById('edInterviewTime').value,
+        coordinator: document.getElementById('edCoordinator').value,
+        status: document.getElementById('edStatus').value,
+        videoUrl: document.getElementById('edVideoUrl').value,
+        photoBase64: state.pendingPhotoBase64,
+        removePhoto: state.removePhoto
+      };
+
+      try {
+        const json = await postApi({ action: 'saveRow', pin: state.pin, payload: payload });
+        btn.disabled = false;
+        btn.textContent = '💾 บันทึกลง Google Sheets';
+        localStorage.removeItem(CACHE_STORAGE_KEY);
+        closeModal('editModal');
+        applyData(json.data);
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = '💾 บันทึกลง Google Sheets';
+        alert('บันทึกไม่สำเร็จ: ' + err.message);
+      }
+    }
+
+    async function addAnotherPersonInBatch() {
+      if (!state.editingItem) return;
+      if (!confirm('ต้องการแทรกแถวใหม่ต่อท้ายรุ่นนี้ เพื่อเพิ่มรายชื่อศิษย์เก่ารุ่นเดียวกันอีก 1 ท่านใช่หรือไม่?')) return;
+
+      try {
+        const json = await postApi({
+          action: 'addSubRow',
+          pin: state.pin,
+          payload: {
+            sheetKey: state.editingItem.sheetKey,
+            afterRowNumber: state.editingItem.rowNumber,
+            firstName: '',
+            lastName: ''
+          }
+        });
+        localStorage.removeItem(CACHE_STORAGE_KEY);
+        closeModal('editModal');
+        applyData(json.data);
+      } catch (err) {
+        alert('เพิ่มแถวไม่สำเร็จ: ' + err.message);
+      }
+    }
+
+    function openPhotoModal(itemId) {
+      const item = state.items.find(i => i.id === itemId);
+      if (!item || !item.photoUrl) return;
+      state.viewerUrl = item.photoUrl;
+      state.viewerFileName = ('ศิษย์เก่า50ปี_' + item.sheetKey + '_' + (item.fullName || item.batch)).replace(/\s+/g, '_') + '.jpg';
+
+      document.getElementById('viewerImg').src = item.photoUrl;
+      document.getElementById('viewerCaption').textContent = `${item.fullName || 'ศิษย์เก่า'} (${item.sheetKey}${item.batch ? ' รุ่นที่ ' + item.batch : ''})`;
+      document.getElementById('btnOpenOrig').href = item.downloadUrl || item.photoUrl;
+      document.getElementById('btnDownloadImg').disabled = false;
+      document.getElementById('btnDownloadImg').textContent = '⬇️ ดาวน์โหลดรูปลงเครื่อง';
+
+      openModal('photoModal');
+    }
+
+    async function downloadViewerPhoto() {
+      if (!state.viewerUrl) return;
+      const btn = document.getElementById('btnDownloadImg');
+      btn.disabled = true;
+      btn.textContent = '⏳ กำลังเตรียมไฟล์...';
+
+      try {
+        const json = await postApi({ action: 'downloadImage', imgUrl: state.viewerUrl });
+        btn.disabled = false;
+        btn.textContent = '⬇️ ดาวน์โหลดรูปลงเครื่อง';
+        if (json.data && json.data.dataUrl) {
+          const a = document.createElement('a');
+          a.href = json.data.dataUrl;
+          a.download = state.viewerFileName || json.data.fileName || 'alumni.jpg';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        }
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = '⬇️ ดาวน์โหลดรูปลงเครื่อง';
+        window.open(document.getElementById('btnOpenOrig').href || state.viewerUrl, '_blank');
+      }
+    }
+
+    function openModal(id) { document.getElementById(id).classList.add('open'); }
+    function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+
+    window.addEventListener('DOMContentLoaded', () => refreshData(false));
+  </script>
+</body>
+</html>
